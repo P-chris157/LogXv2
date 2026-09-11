@@ -1,0 +1,7 @@
+{
+  "name": "LogX",
+  "description": "Dark-themed mobile-first gym workout tracker with live rest timer, progressive overload tracking, and AI workout coaching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --theme-accent: #b49bf8;
+  --theme-accent-light: #c084fc;
+  --theme-accent-bg: #241a3f;
+  --theme-accent-border: #4c3580;
+  --theme-btn-bg: #b49bf8;
+  --theme-btn-hover: #c4adff;
+  --theme-btn-text: #0d0a1a;
+  --theme-glow: rgba(180, 155, 248, 0.4);
+}
+
+/* Dynamic theme helper utility classes */
+.text-theme-accent {
+  color: var(--theme-accent) !important;
+}
+
+.text-theme-light {
+  color: var(--theme-accent-light) !important;
+}
+
+.bg-theme-accent {
+  background-color: var(--theme-accent) !important;
+}
+
+.bg-theme-accent-bg {
+  background-color: var(--theme-accent-bg) !important;
+}
+
+.border-theme-accent {
+  border-color: var(--theme-accent) !important;
+}
+
+.border-theme-border {
+  border-color: var(--theme-accent-border) !important;
+}
+
+.btn-theme-primary {
+  background-color: var(--theme-btn-bg) !important;
+  color: var(--theme-btn-text) !important;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-theme-primary:hover {
+  background-color: var(--theme-btn-hover) !important;
+  transform: translateY(-1px);
+}
+
+.badge-theme-accent {
+  background-color: var(--theme-accent-bg) !important;
+  color: var(--theme-accent-light) !important;
+  border: 1px solid var(--theme-accent-border) !important;
+}
+
+.fill-theme-accent {
+  fill: var(--theme-accent) !important;
+}
+
+/* Hide number input spin buttons across browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Prevent iOS Safari & mobile browsers from auto-zooming on input focus */
+@media screen and (max-width: 850px) {
+  input,
+  textarea,
+  select,
+  input[type="text"],
+  input[type="number"],
+  input[type="search"],
+  input[type="password"],
+  input[type="email"] {
+    font-size: 16px !important;
+  }
+}
+
+/* Eliminate double-tap zoom triggers and optimize responsive touch response */
+html,
+body,
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
